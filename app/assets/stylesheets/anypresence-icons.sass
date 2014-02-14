@@ -1,9 +1,393 @@
 @import "icons-28/*.png"
 @import "icons-56/*.png"
-@import "icons-72/*.png"
 @import "icons-96/*.png"
 
 +all-icons-28-sprites
 +all-icons-56-sprites
-+all-icons-72-sprites
 +all-icons-96-sprites
+
+.platform-icon-28
+  display: inline-block
+  width: 28px
+  height: 28px
+.platform-icon-56
+  display: inline-block
+  width: 56px
+  height: 56px
+.platform-icon-96
+  display: inline-block
+  width: 96px
+  height: 96px
+  
+[class*=-icon-28]
+  @extend .platform-icon-28
+[class*=-icon-56]
+  @extend .platform-icon-56
+[class*=-icon-96]
+  @extend .platform-icon-96
+
+.platform-icon-text-28
+  display: inline-block
+  padding: 5px 0 0 5px
+.platform-icon-text-56
+  display: inline-block
+  padding: 15px 0 0 10px
+.platform-icon-text-96
+  display: inline-block
+  padding: 15px 0 0 20px
+
+[class*=-icon-28]
+  @extend .platform-icon-28
+[class*=-icon-56]
+  @extend .platform-icon-56
+[class*=-icon-96]
+  @extend .platform-icon-96
+
+.platform-icon-28-arrow-right
+  +icons-28-sprite(arrow-rounded-right)
+
+.build-type-icon-28-jquery_app
+  +icons-28-sprite(html5)
+.build-type-icon-28-ios_app
+  +icons-28-sprite(apple)
+.build-type-icon-28-android_app
+  +icons-28-sprite(android)
+.build-type-icon-28-java_app
+  +icons-28-sprite(open-box-java)
+.build-type-icon-28-wp_app
+  +icons-28-sprite(open-box-wp)
+.build-type-icon-28-jquery_sdk
+  +icons-28-sprite(open-box-backbonejs)
+.build-type-icon-28-ios_sdk
+  +icons-28-sprite(open-box-apple)
+.build-type-icon-28-android_sdk
+  +icons-28-sprite(open-box-android)
+.build-type-icon-28-java_sdk
+  +icons-28-sprite(open-box-java)
+.build-type-icon-28-wp_sdk
+  +icons-28-sprite(open-box-wp)
+.build-type-icon-28-rails_api
+  +icons-28-sprite(cloud-ruby-server)
+.build-type-icon-28-play_api
+  +icons-28-sprite(cloud-play-server)
+
+.build-type-icon-56-jquery_app
+  +icons-56-sprite(html5)
+.build-type-icon-56-ios_app
+  +icons-56-sprite(apple)
+.build-type-icon-56-android_app
+  +icons-56-sprite(android)
+.build-type-icon-56-java_app
+  +icons-56-sprite(open-box-java)
+.build-type-icon-56-wp_app
+  +icons-56-sprite(open-box-wp)
+.build-type-icon-56-jquery_sdk
+  +icons-56-sprite(open-box-backbonejs)
+.build-type-icon-56-ios_sdk
+  +icons-56-sprite(open-box-apple)
+.build-type-icon-56-android_sdk
+  +icons-56-sprite(open-box-android)
+.build-type-icon-56-java_sdk
+  +icons-56-sprite(open-box-java)
+.build-type-icon-56-wp_sdk
+  +icons-56-sprite(open-box-wp)
+.build-type-icon-56-rails_api
+  +icons-56-sprite(cloud-ruby-server)
+.build-type-icon-56-play_api
+  +icons-56-sprite(cloud-play-server)
+
+.build-type-icon-96-jquery_app
+  +icons-96-sprite(html5)
+.build-type-icon-96-ios_app
+  +icons-96-sprite(apple)
+.build-type-icon-96-android_app
+  +icons-96-sprite(android)
+.build-type-icon-96-java_app
+  +icons-96-sprite(open-box-java)
+.build-type-icon-96-jquery_sdk
+  +icons-96-sprite(open-box-backbonejs)
+.build-type-icon-96-ios_sdk
+  +icons-96-sprite(open-box-apple)
+.build-type-icon-96-android_sdk
+  +icons-96-sprite(open-box-android)
+.build-type-icon-96-java_sdk
+  +icons-96-sprite(open-box-java)
+.build-type-icon-96-wp_sdk
+  +icons-96-sprite(open-box-wp)
+.build-type-icon-96-rails_api
+  +icons-96-sprite(cloud-ruby-server)
+.build-type-icon-96-play_api
+  +icons-96-sprite(cloud-play-server)
+
+.data-source-icon-28-local
+  +icons-28-sprite(database-anypresence)
+.data-source-icon-28-simpledb
+  +icons-28-sprite(database-aws)
+.data-source-icon-28-mysql
+  +icons-28-sprite(database-mysql)
+.data-source-icon-28-postgres
+  +icons-28-sprite(database-postgresql)
+.data-source-icon-28-rest
+  +icons-28-sprite(datasource-rest)
+.data-source-icon-28-hana
+  +icons-28-sprite(sap-hana)
+.data-source-icon-28-mongodb
+  +icons-28-sprite(database-mongodb)
+.data-source-icon-28-sqlserver
+  +icons-28-sprite(database-sql-server)
+.data-source-icon-28-salesforce
+  +icons-28-sprite(salesforce)
+.data-source-icon-28-oracle
+  +icons-28-sprite(database-oracle)
+.data-source-icon-28-soap
+  +icons-28-sprite(datasource-soap)
+.data-source-icon-28-custom
+  +icons-28-sprite(cloud-wrench)
+.data-source-icon-28-webscraper
+  +icons-28-sprite(datasource-scraper)
+.data-source-icon-28-odata
+  +icons-28-sprite(datasource-odata)
+
+.data-source-icon-56-local
+  +icons-56-sprite(database-anypresence)
+.data-source-icon-56-simpledb
+  +icons-56-sprite(database-aws)
+.data-source-icon-56-mysql
+  +icons-56-sprite(database-mysql)
+.data-source-icon-56-postgres
+  +icons-56-sprite(database-postgresql)
+.data-source-icon-56-rest
+  +icons-56-sprite(datasource-rest)
+.data-source-icon-56-hana
+  +icons-56-sprite(sap-hana)
+.data-source-icon-56-mongodb
+  +icons-56-sprite(database-mongodb)
+.data-source-icon-56-sqlserver
+  +icons-56-sprite(database-sql-server)
+.data-source-icon-56-salesforce
+  +icons-56-sprite(salesforce)
+.data-source-icon-56-oracle
+  +icons-56-sprite(database-oracle)
+.data-source-icon-56-soap
+  +icons-56-sprite(datasource-soap)
+.data-source-icon-56-custom
+  +icons-56-sprite(cloud-wrench)
+.data-source-icon-56-webscraper
+  +icons-56-sprite(datasource-scraper)
+.data-source-icon-56-odata
+  +icons-56-sprite(datasource-odata)
+
+.data-source-icon-96-local
+  +icons-96-sprite(database-anypresence)
+.data-source-icon-96-simpledb
+  +icons-96-sprite(database-aws)
+.data-source-icon-96-mysql
+  +icons-96-sprite(database-mysql)
+.data-source-icon-96-postgres
+  +icons-96-sprite(database-postgresql)
+.data-source-icon-96-rest
+  +icons-96-sprite(datasource-rest)
+.data-source-icon-96-hana
+  +icons-96-sprite(sap-hana)
+.data-source-icon-96-mongodb
+  +icons-96-sprite(database-mongodb)
+.data-source-icon-96-sqlserver
+  +icons-96-sprite(database-sql-server)
+.data-source-icon-96-salesforce
+  +icons-96-sprite(salesforce)
+.data-source-icon-96-oracle
+  +icons-96-sprite(database-oracle)
+.data-source-icon-96-soap
+  +icons-96-sprite(datasource-soap)
+.data-source-icon-96-custom
+  +icons-96-sprite(cloud-wrench)
+.data-source-icon-96-webscraper
+  +icons-96-sprite(datasource-scraper)
+.data-source-icon-96-odata
+  +icons-96-sprite(datasource-odata)
+
+.extension-icon-28-push_notifications
+  +icons-28-sprite(phone-notification)
+.extension-icon-28-sms_notifier
+  +icons-28-sprite(mobile-talk)
+.extension-icon-28-email_notifier
+  +icons-28-sprite(mail)
+.extension-icon-28-ivr_notifier
+  +icons-28-sprite(mobile-signal)
+.extension-icon-28-analytics
+  +icons-28-sprite(line-chart)
+.extension-icon-28-scheduler
+  +icons-28-sprite(alarm-clock)
+.extension-icon-28-twitter_notifier
+  +icons-28-sprite(twitter-logomark)
+.extension-icon-28-web_service_notifier
+  +icons-28-sprite(cloud-gear)
+.extension-icon-28-importer
+  +icons-28-sprite(import-data)
+
+.extension-icon-56-push_notifications
+  +icons-56-sprite(phone-notification)
+.extension-icon-56-sms_notifier
+  +icons-56-sprite(mobile-talk)
+.extension-icon-56-email_notifier
+  +icons-56-sprite(mail)
+.extension-icon-56-ivr_notifier
+  +icons-56-sprite(mobile-signal)
+.extension-icon-56-analytics
+  +icons-56-sprite(line-chart)
+.extension-icon-56-scheduler
+  +icons-56-sprite(alarm-clock)
+.extension-icon-56-twitter_notifier
+  +icons-56-sprite(twitter-logomark)
+.extension-icon-56-web_service_notifier
+  +icons-56-sprite(cloud-gear)
+.extension-icon-56-importer
+  +icons-56-sprite(import-data)
+
+.extension-icon-96-push_notifications
+  +icons-96-sprite(phone-notification)
+.extension-icon-96-sms_notifier
+  +icons-96-sprite(mobile-talk)
+.extension-icon-96-email_notifier
+  +icons-96-sprite(mail)
+.extension-icon-96-ivr_notifier
+  +icons-96-sprite(mobile-signal)
+.extension-icon-96-analytics
+  +icons-96-sprite(line-chart)
+.extension-icon-96-scheduler
+  +icons-96-sprite(alarm-clock)
+.extension-icon-96-twitter_notifier
+  +icons-96-sprite(twitter-logomark)
+.extension-icon-96-web_service_notifier
+  +icons-96-sprite(cloud-gear)
+.extension-icon-96-importer
+  +icons-96-sprite(import-data)
+
+.deployment-icon-28-heroku
+  +icons-28-sprite(heroku-logomark)
+.deployment-icon-28-s3
+  +icons-28-sprite(s3)
+.deployment-icon-28-ioscompilation, .deployment-icon-28-ios_compilation
+  +icons-28-sprite(apple)
+.deployment-icon-28-androidcompilation, .deployment-icon-28-android_compilation
+  +icons-28-sprite(android)
+.deployment-icon-28-iosapperian, .deployment-icon-28-ios_apperian
+  +icons-28-sprite(ios_apperian)
+.deployment-icon-28-androidapperian, .deployment-icon-28-android_apperian
+  +icons-28-sprite(android_apperian)
+.deployment-icon-28-appio
+  +icons-28-sprite(appio)
+.deployment-icon-28-github
+  +icons-28-sprite(github)
+
+.deployment-icon-56-heroku
+  +icons-56-sprite(heroku-logomark)
+.deployment-icon-56-s3
+  +icons-56-sprite(s3)
+.deployment-icon-56-ioscompilation, .deployment-icon-56-ios_compilation
+  +icons-56-sprite(apple)
+.deployment-icon-56-androidcompilation, .deployment-icon-56-android_compilation
+  +icons-56-sprite(android)
+.deployment-icon-56-iosapperian, .deployment-icon-56-ios_apperian
+  +icons-56-sprite(ios_apperian)
+.deployment-icon-56-androidapperian, .deployment-icon-56-android_apperian
+  +icons-56-sprite(android_apperian)
+.deployment-icon-56-appio
+  +icons-56-sprite(appio)
+.deployment-icon-56-github
+  +icons-56-sprite(github)
+
+.deployment-icon-96-heroku
+  +icons-96-sprite(heroku-logomark)
+.deployment-icon-96-s3
+  +icons-96-sprite(s3)
+.deployment-icon-96-ioscompilation, .deployment-icon-96-ios_compilation
+  +icons-96-sprite(apple)
+.deployment-icon-96-androidcompilation, .deployment-icon-96-android_compilation
+  +icons-96-sprite(android)
+.deployment-icon-96-iosapperian, .deployment-icon-96-ios_apperian
+  +icons-96-sprite(ios_apperian)
+.deployment-icon-96-androidapperian, .deployment-icon-96-android_apperian
+  +icons-96-sprite(android_apperian)
+.deployment-icon-96-appio
+  +icons-96-sprite(appio)
+.deployment-icon-96-github
+  +icons-96-sprite(github)
+
+.configuration-icon-56-ios
+  +icons-56-sprite(apple-gears)
+.configuration-icon-56-android
+  +icons-56-sprite(android-gears)
+.configuration-icon-56-java
+  +icons-56-sprite(java-gears)
+
+.configuration-icon-96-ios
+  +icons-96-sprite(apple-gears)
+.configuration-icon-96-android
+  +icons-96-sprite(android-gears)
+.configuration-icon-96-java
+  +icons-96-sprite(java-gears)
+
+.authentication-strategy-icon-28-password
+  +icons-28-sprite(auth-password)
+.authentication-strategy-icon-28-custom
+  +icons-28-sprite(auth-custom)
+
+.authentication-strategy-icon-56-password
+  +icons-56-sprite(auth-password)
+.authentication-strategy-icon-56-custom
+  +icons-56-sprite(auth-custom)
+
+.authentication-strategy-icon-96-password
+  +icons-96-sprite(auth-password)
+.authentication-strategy-icon-96-custom
+  +icons-96-sprite(auth-custom)
+
+.repository-icon-28-archive
+  +icons-28-sprite(archive)
+.repository-icon-28-github
+  +icons-28-sprite(github)
+
+.repository-icon-56-archive
+  +icons-56-sprite(archive)
+.repository-icon-56-github
+  +icons-56-sprite(github)
+
+.repository-icon-96-archive
+  +icons-96-sprite(archive)
+.repository-icon-96-github
+  +icons-96-sprite(github)
+
+.credential-icon-28-heroku
+  +icons-28-sprite(heroku-logomark)
+.credential-icon-28-s3
+  +icons-28-sprite(s3)
+.credential-icon-28-appio
+  +icons-28-sprite(appio)
+.credential-icon-28-github
+  +icons-28-sprite(github)
+.credential-icon-28-apperian
+  +icons-28-sprite(apperian)
+
+.credential-icon-56-heroku
+  +icons-56-sprite(heroku-logomark)
+.credential-icon-56-s3
+  +icons-56-sprite(s3)
+.credential-icon-56-appio
+  +icons-56-sprite(appio)
+.credential-icon-56-github
+  +icons-56-sprite(github)
+.credential-icon-56-apperian
+  +icons-56-sprite(apperian)
+
+.credential-icon-96-heroku
+  +icons-96-sprite(heroku-logomark)
+.credential-icon-96-s3
+  +icons-96-sprite(s3)
+.credential-icon-96-appio
+  +icons-96-sprite(appio)
+.credential-icon-96-github
+  +icons-96-sprite(github)
+.credential-icon-96-apperian
+  +icons-96-sprite(apperian)
+
