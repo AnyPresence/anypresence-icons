@@ -1,7 +1,11 @@
 module IconHelper
   def platform_icon(name, type='platform', size=56, options={})
     options[:class] ||= ''
-    options[:class] = "#{type}-icon-#{size}-#{name} #{options[:class]}"
+    if options[:wide]
+      options[:class] = "#{type}-icon-wide-#{size}-#{name} #{options[:class]}"
+    else
+      options[:class] = "#{type}-icon-#{size}-#{name} #{options[:class]}"
+    end
     content_tag :span, '', options
   end
 

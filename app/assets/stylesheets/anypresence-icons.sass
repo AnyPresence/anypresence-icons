@@ -1,10 +1,12 @@
 @import "icons-28/*.png"
 @import "icons-56/*.png"
 @import "icons-96/*.png"
+@import "icons-wide-96/*.png"
 
 +all-icons-28-sprites
 +all-icons-56-sprites
 +all-icons-96-sprites
++all-icons-wide-96-sprites
 
 .platform-icon-28
   display: inline-block
@@ -19,12 +21,21 @@
   width: 96px
   height: 96px
 
+.platform-icon-wide-96
+  display: inline-block
+  width: 800px
+  height: 96px
+
+
 [class*=-icon-28]
   @extend .platform-icon-28
 [class*=-icon-56]
   @extend .platform-icon-56
 [class*=-icon-96]
   @extend .platform-icon-96
+
+[class*=-icon-wide-96]
+  @extend .platform-icon-wide-96
 
 .platform-icon-text-28
   display: inline-block
@@ -36,12 +47,19 @@
   display: inline-block
   padding: 15px 0 0 20px
 
+.platform-icon-wide-text-96
+  display: inline-block
+  padding: 15px 0 0 20px
+
 [class*=-icon-28]
   @extend .platform-icon-28
 [class*=-icon-56]
   @extend .platform-icon-56
 [class*=-icon-96]
   @extend .platform-icon-96
+
+[class*=-icon-wide-96]
+  @extend .platform-icon-wide-96
 
 .platform-icon-28-arrow-right
   +icons-28-sprite(arrow-rounded-right)
@@ -248,6 +266,13 @@
 .data-source-icon-96-ibmdb2
   +icons-96-sprite(database-ibmdb2)
 
+.data-source-icon-wide-96-http
+  +icons-wide-96-sprite(datasource-http)
+.data-source-icon-wide-96-simpleobjectaccessprotocol
+  +icons-wide-96-sprite(datasource-simpleobjectaccessprotocol)
+.data-source-icon-wide-96-d2s-http
+  +icons-wide-96-sprite(datasource-d2s-http)
+
 .extension-icon-28-push_notifications
   +icons-28-sprite(phone-notification)
 .extension-icon-28-sms_notifier
@@ -408,6 +433,11 @@
   +icons-96-sprite(auth-oauth2)
 .authentication-strategy-icon-96-saml
   +icons-96-sprite(auth-saml)
+
+.authentication-strategy-icon-wide-96-ldap
+  +icons-wide-96-sprite(auth-ldap)
+.authentication-strategy-icon-wide-96-oauth2
+  +icons-wide-96-sprite(auth-oauth2)
 
 .repository-icon-28-archive
   +icons-28-sprite(archive)
